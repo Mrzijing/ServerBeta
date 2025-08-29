@@ -1,0 +1,3 @@
+/home/crystalchen/Project/SmartHomeBetaTest/ServerBeta/build/CMakeFiles/Server.dir
+/home/crystalchen/Project/SmartHomeBetaTest/ServerBeta/build/CMakeFiles/edit_cache.dir
+/home/crystalchen/Project/SmartHomeBetaTest/ServerBeta/build/CMakeFiles/rebuild_cache.dir

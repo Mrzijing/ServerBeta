@@ -1,0 +1,67 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "SmartHome (直接运行整体项目)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/Server",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "environment": [
+        {
+          "name": "LD_LIBRARY_PATH",
+          "value": "/home/crystalchen/SeetaFace2/install/lib:${env:LD_LIBRARY_PATH}"
+        }
+      ],
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "console": "integratedTerminal",
+      "externalConsole": false,
+      "stopAtEntry": false,
+      "preLaunchTask": "Build Server"
+    },
+    {
+      "name": "SmartHome (直接运行整体项目并编写项目日志)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "/bin/bash",
+      "args": [
+        "-lc",
+        "stdbuf -oL -eL ${workspaceFolder}/build/Server 2>&1 | tee -a ${workspaceFolder}/run-$(date +%F_%H%M%S).log"
+      ],
+      "cwd": "${workspaceFolder}",
+      "environment": [
+        {
+          "name": "LD_LIBRARY_PATH",
+          "value": "/home/crystalchen/SeetaFace2/install/lib:${env:LD_LIBRARY_PATH}"
+        }
+      ],
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "console": "integratedTerminal",
+      "externalConsole": false,
+      "stopAtEntry": false,
+      "preLaunchTask": "Build Server"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "cwd": "/home/crystalchen/Project/SmartHomeBetaTest/ServerBeta",
+      "program": "/home/crystalchen/Project/SmartHomeBetaTest/ServerBeta/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

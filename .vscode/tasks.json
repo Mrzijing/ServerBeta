@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Server",
+      "type": "shell",
+      "command": "cmake -S . -B build && cmake --build build -j",
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
