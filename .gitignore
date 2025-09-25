@@ -1,0 +1,88 @@
+# Build artifacts
+build/
+*.o
+*.a
+*.so
+*.so.*
+*.dylib
+
+# Executables
+Server
+main
+*.exe
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+
+# Database files (optional - comment out if you want to track the database)
+# server.db
+# *.db
+
+# IDE files
+.vscode/
+.idea/
+*.pro.user
+*.pro.user.*
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
+*~
+
+# OS specific
+.DS_Store
+Thumbs.db
+*.pid
+
+# Dependencies
+node_modules/
+*.tgz
+
+# Face recognition models (usually large files)
+*.dat
+models/
+*.model
+
+# Core dumps
+core
+core.*
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Test outputs
+test_output/
+*.test
+
+# Documentation build
+docs/build/
+docs/_build/
+
+# Package files
+*.deb
+*.rpm
+*.tar.gz
+*.zip
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Editor specific
+.vimrc.local
+.project
+.cproject
+
+# Static analysis
+.clang_complete
+compile_commands.json
